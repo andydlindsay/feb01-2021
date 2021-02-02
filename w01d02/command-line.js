@@ -22,17 +22,16 @@ let total = 0;
 // for..of gives us the value/element every time
 for (const num of sliced) {
   // console.log('current element:', num);
-  const converted = Number(num); // 4.5
+  const converted = Number(num); // '4.5' becomes 4.5
 
   // if (Number.isInteger(converted) === true) {
   if (Number.isInteger(converted) && converted > 0) {
     total += converted;
     // total = total + num;
-  } 
+  }
 }
 
 console.log('total:', total);
-
 
 // const result = process
 //   .argv
@@ -43,11 +42,3 @@ console.log('total:', total);
 //   .reduce((a, c) => a + c, 0);
   
 // console.log('result:', result);
-
-
-
-
-
-
-
-// 
