@@ -1,8 +1,8 @@
 # W01D03 - Objects in JS
 
 ### To Do
-- [ ] Review primitive types
-- [ ] Objects!
+- [x] Review primitive types
+- [x] Objects!
 - [ ] Passing primitives and objects to functions
 - [ ] Functions inside objects (using `this`)
 
