@@ -16,7 +16,22 @@
  *    0
  */
 const min = function(arr) {
+  // pick an arbitrarily high value
+  let lowest = Infinity;
+  // let lowest = arr[0];
+  // Math.min(...arr);
 
+  // loop through the arr
+  for (const num of arr) {
+    // compare each value against the current lowest value
+    if (num < lowest) {
+      // if the current value is lower, replace lowest
+      lowest = num;
+    }
+  }
+
+  // return lowest value
+  return lowest;
 };
 
 
@@ -32,7 +47,20 @@ const min = function(arr) {
  *    9
  */
 const max = function(arr) {
+  // pick an arbitrarily low value
+  let highest = -Infinity;
 
+  // loop through the arr
+  for (const num of arr) {
+    // compare each value against the current highest value
+    if (num > highest) {
+      // if the current value is higher, replace highest
+      highest = num;
+    }
+  }
+
+  // return highest value
+  return highest;
 };
 
 /* ===========================================================================
@@ -47,7 +75,12 @@ const max = function(arr) {
  *    9
  */
 const range = function(arr) {
+  const highest = max(arr);
+  const lowest = min(arr);
+  const rangeCalc = highest - lowest;
+  return rangeCalc;
 
+  // return max(arr) - min(arr);
 };
 
 // Don't change below:
