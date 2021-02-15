@@ -1,0 +1,15 @@
+{
+  "name": "w03d01",
+  "version": "1.0.0",
+  "description": "### To Do - [x] Intro to Web Servers - [ ] Intro to Express - [ ] What is \"Middleware?\" - [ ] Custom Middleware - [ ] Server-side view templates with EJS [Stretch]",
+  "main": "simple-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
