@@ -3,8 +3,8 @@
 ### To Do
 - [x] Intro to Web Servers
 - [x] Intro to Express
-- [ ] What is "Middleware?"
-- [ ] Custom Middleware
+- [x] What is "Middleware?"
+- [x] Custom Middleware
 - [ ] Server-side view templates with EJS [Stretch]
 
 3 pillars of web development
@@ -32,12 +32,17 @@
 http://localhost:1667`/products`
 http://localhost:1667`/users`
 
+### Middleware
+* a function that sits between the request and the response
+
+### HTTP Status Codes
+* every single response contains a status code
+* this is an integer that represents the status of the reponse
 
 
 
-
-
-
+JSON.parse
+JSON.stringify
 
 
 
