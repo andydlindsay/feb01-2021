@@ -1,0 +1,18 @@
+{
+  "name": "w03d04",
+  "version": "1.0.0",
+  "description": "lecture notes and example code for w3d4 lecture",
+  "main": "server.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "uuid": "^3.4.0"
+  }
+}

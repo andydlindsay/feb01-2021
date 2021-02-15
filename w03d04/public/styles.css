@@ -1,0 +1,25 @@
+body {
+  background-color: paleturquoise;
+  margin: 20px auto;
+  width: 600px;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+}
+
+.heading {
+  font-family: 'Raleway', sans-serif;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Login</title>
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="heading">Welcome Back!</h1>
+    <p>First time here? <a href="/register">Register!</a></p>
+
+    <form method="POST" action="/login">
+      <h3>Login Form</h3>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="username" id="username" name="username" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <br/>
+      <button type="submit">Login</button>
+    </form>
+
+  </div>
+</body>
+</html>
