@@ -6,7 +6,6 @@
 - [ ] HTTP Secure (HTTPS)
 - [ ] REST [Stretch]
 - [ ] More HTTP methods/`Method Override` [Stretch]
-- [ ] Modular Routing [Stretch]
 
 
 
