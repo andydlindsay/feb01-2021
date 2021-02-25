@@ -2,12 +2,17 @@
 
 ### To Do
 - [ ] Responsive Design
-- [ ] Viewport Meta Tag
-- [ ] Relative Units
+- [ ] Relative Units (`%`, `vh`, `vw`, `em`, `rem`)
 - [ ] `max-width` and `min-width`
 - [ ] Media Queries
 - [ ] CSS Preprocessors
 - [ ] Intro to Sass/SCSS
+
+
+
+
+
+
 
 
 
