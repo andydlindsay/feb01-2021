@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+header {
+  height: 160px;
+  background-color: coral;
+}
+
+section {
+  border: 2px solid black;
+}
+
+section div {
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  line-height: 150px;
+  display: inline-block;
+  background-color: lightpink;
+  text-align: center;
+}
+
+footer {
+  background-color: burlywood;
+  height: 150px;
+}
