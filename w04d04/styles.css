@@ -2,26 +2,43 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 24px;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 50px;
 }
 
-header {
-  height: 160px;
-  background-color: coral;
-}
-
 section {
   border: 2px solid black;
+  width: 80%;
+  /* height: 400px; */
+  font-size: 96px;
+}
+
+section.my-class {
+  color: white;
 }
 
 section div {
   height: 150px;
-  width: 150px;
+  /* height: 40%; */
+  /* height: 40vh; */
+  /* width: 150px; */
+  /* min-width: 100px; */
+  /* max-width: 148px; */
+  /* width: 25%; */
+  /* width: 40vh; vh === 2px * 40 === 80px */
+  width: 5rem;
+  font-size: 0.5rem;
+  border: 0.5rem dotted orange;
+  /* font-size: 100%; */
+  /* font-size: 20vh; */
   margin: 20px;
-  line-height: 150px;
+  /* line-height: 150px; */
   display: inline-block;
   background-color: lightpink;
   text-align: center;
@@ -31,3 +48,29 @@ footer {
   background-color: burlywood;
   height: 150px;
 }
+
+header {
+  height: 160px;
+  background-color: coral;
+  background-color: blue;
+}
+
+
+
+@media only screen and (min-width: 250px) {
+  header {
+    background-color: brown;
+  }
+
+  .my-class {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  header {
+    background-color: limegreen;
+  }
+}
+
+

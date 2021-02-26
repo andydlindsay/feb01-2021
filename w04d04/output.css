@@ -1,0 +1,64 @@
+header {
+  font-size: 24px;
+  color: lightblue;
+}
+
+div {
+  color: lightblue;
+  border: 0.5em dotted lightgrey;
+}
+
+p {
+  color: blue;
+}
+
+section {
+  color: lightblue;
+  border: 0.5em dotted lightgrey;
+}
+section div {
+  color: blue;
+  font-size: 2.4rem;
+  background-color: magenta;
+}
+section div p {
+  color: yellowgreen;
+}
+section:hover {
+  color: orange;
+}
+section.my-class {
+  color: brown;
+}
+
+.header-styles, .my-header {
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.my-header {
+  background-color: firebrick;
+}
+
+.my-awesome-style {
+  color: rebeccapurple;
+  background: orange;
+}
+
+.small-square {
+  font-size: 6.25px;
+  min-width: 25px;
+  height: 25px;
+}
+
+.med-square {
+  font-size: 12.5vw;
+  min-width: 50vw;
+  height: 50vw;
+}
+
+.large-square {
+  font-size: 25px;
+  min-width: 100px;
+  height: 100px;
+}

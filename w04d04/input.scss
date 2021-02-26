@@ -1,0 +1,78 @@
+@import '_variables';
+
+header {
+  font-size: 24px;
+  color: $primary-font-color;
+}
+
+div {
+  color: $primary-font-color;
+  border: $border;
+}
+
+p {
+  color: $secondary-color;
+}
+
+section {
+  color: $primary-font-color;
+  border: $border;
+
+  
+  div {
+    color: $secondary-color;
+    font-size: 2.4rem;
+    background-color: $something-new;
+
+    p {
+      color: yellowgreen;
+    }
+  }
+
+  &:hover {
+    color: orange;
+  }
+
+  &.my-class {
+    color: brown;
+  }
+}
+
+// extending styles
+.header-styles {
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.my-header {
+  @extend .header-styles;
+  background-color: firebrick;
+}
+
+// mixins aka function
+@mixin my-mixin {
+  color: rebeccapurple;
+  background: orange;
+}
+
+.my-awesome-style {
+  @include my-mixin();
+}
+
+@mixin make-square($n) {
+  font-size: 0.25 * $n;
+  min-width: $n;
+  height: $n;
+}
+
+.small-square {
+  @include make-square(25px);
+}
+
+.med-square {
+  @include make-square(50vw);
+}
+
+.large-square {
+  @include make-square(100px);
+}
