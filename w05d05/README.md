@@ -1,64 +1,60 @@
-# W05D05 - Midterm Project Kickoff
+# W05D05 - Mid-term Project Kickoff
 
-### Learning Outcomes
-* Repetition, solid what you've learned
-* put all the knowledge together
-* apply ourselves
-* make us uncomfortable
-* prove it!
-* working with a team
-* collaboration with git!!!
-* merge conflicts
+### Pick a Project
+- Wiki Map
+- Quiz App
+- Story Creator
+- Decision Maker
+- PasswordKeepR
+- Smart TODO List
+- Resource Wall
+- Buy/Sell Listing Website
+- Schoodle
+- Food Pick-up Ordering
 
-### Pick a Project!
+### User Stories
+- A _user story_ describes how users will interact with your application
+- They have the form: As a ______, I want to ______, because ______.
+- eg. As a _user_, I want to _be able to save posts_, because _I want to review them later_.
+- User stories can also be negated: As a _____, I shouldn't be able to ______, because _____.
+- eg. As a _user_, I shouldn't be able to _edit other users posts_, because _I don't own those posts_.
 
-### Convert requirements to user stories
-* As a _____, I can _____, because _____
-* As a logged in user, I can create a new map, because I want to share POI with my friends
+### User Scenarios
+- A _user scenario_ is a syntactic alternative to user stories
+- They have the form: Given _____, when ______, then ______.
+- eg. Given _that I am logged in_, when _I click favourite on a post_, then _it is added to my favourites_.
+- You can also chain on an _and_ to user stories/scenarios
+- eg. Given _that I am logged in_, when _I click favourite on a post_, then _it is added to my favourites_ **and** _the save icon will change to indicate success_.
 
-Requirement: users can see a list of the available maps
-User Story: As a user, I can see a list of available maps, because I want to see interesting things in my area
-
-As a logged in user, I can add a pin to a map, because ...
-As a non-logged in user, I am unable to add a pin to a map, because that map doesn't belong to me
-
-As a user, I can favourite an item, because I want to be able to review it later AND the heart icon turns red
-
-* Ask for a review
-
-### Pick out all the nouns
-* nouns === tables
-* create the ERD
+### ERD
+- The user stories provide you with nouns (eg. user, posts, favourites)
+- Use these nouns/entities to build out your database (ie. tables are the nouns from the stories)
 
 ### Routes
-* describe how we access the resource
+- Once you know the resources that you'll have, write out the routes that you'll need to perform BREAD operations on those resources
+- Remember RESTful conventions (they make it much easier)
 
-RESTful
+### MVP vs MVD
+- There is a concept in development of an MVP, the Minimum Viable Product
+- An MVP has just enough features to be useful to a user
+- This concept helps streamline the development process and help keep the team on target
+- For mid-terms, we want to focus on the MVD, the Minimum Viable Demo
+- **If you aren't going to demo it, don't build it**
 
-Browse  GET  /users
-Read    GET  /users/:id
-Edit    POST /users/:id/edit
-Add     POST /users
-<!-- Delete  POST /users/:id/delete -->
+### Wireframes
+- Draw out the structure of your web pages
+- This will make it much easier to build out these pages later
+- This is also a great opportunity to get input from all of the team members
+- Design matters... however you are a developer, not a designer
+- Get inspiration from websites you visit
 
-Browse GET /map/:map_id/pins
-GET /users/:user_id/items
-
-### MVP
-* Minimal Viable Product
-* Minimum Viable Demo MVD
-* If you don't show it, don't build it
-
-### User Interface
-* Mockup/wireframe
-* We are NOT a web design school
-* STEAL
-* diagrams.net, moqups, balsamiq
-
-### User Login/Registration
-* DON'T DO IT
+### User Login
+- Don't do it
+- Seriously, don't do it
+- We know that you know how to register and login users
 
 ```js
+// do this instead
 app.get('/login/:id', (req, res) => {
   req.session.user_id = req.params.id;
   res.redirect('/');
@@ -66,29 +62,30 @@ app.get('/login/:id', (req, res) => {
 ```
 
 ### Tech Choices
-* Front End: HTML, CSS, JS, jQuery, SCSS
-* Back End: Node, Express, Postgres
+- We have made all the tech choices for you
+- Back End: Node and Express
+- Front End: HTML, CSS, JS, jQuery, Bootstrap
 
-### SPA vs Multi-page
-* these are not mutually exclusive
+### The Mid-term Skeleton
+- Use the provided `node-skeleton` as a template for your project
+- This will get you up and running quickly
+
+### SPA vs Multi-page App
+- These concepts are not mutually exclusive
+- You can choose one or the other or both
 
 ### Git
-* use branches
-* do not code on master/main
-* pull request
-* merge conflicts => I hope you have 'em
+- Use Git best practices (ask a mentor for clarification if you need it)
+- Use branches
 
-### Splitting up the work
-* Horizontal = all members are working on the same layer
-* Vertical = members are working on different layers
-* Pair Programming
-* Do what you are weakest at
+### DO NOT CODE ON MASTER
+- I repeat, do not code on master
+
+### Splitting up the Work
+- Horizontally - whole team working on front-end or back-end at the same time
+- Vertically - divide the work between front-end and back-end
+- Pair Programming - working together on the same tasks
 
 ### Communication
-* Just do it
-
-
-
-
-
-# 
+- Make sure to communicate with your team members
+- Use Slack, iMessage, Google Hangouts, whatever... just make sure that everyone is on the same page
