@@ -14,3 +14,4 @@
 * [BREAKOUT - Express Router](/breakout-express-router)
 * [W07D02 - Immutable Update Patterns](/w07d02)
 * [W08D01 - Unit & Integration Testing](/w08d01)
+* [W08D02 - Real World React](/w08d02)
