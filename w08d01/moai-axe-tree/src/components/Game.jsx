@@ -14,7 +14,7 @@ const Game = () => {
   return (
     <div>
       <main className="game">
-        <Computer state={state} />
+        <Computer state={state} setState={setState} />
         <Player state={state} setState={setState} />
       </main>
       <Result status={state.status} />

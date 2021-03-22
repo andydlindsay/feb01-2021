@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { announceResult } from '../helpers/helpers';
+import { announceResult, chooseRobotItem } from '../helpers/helpers';
 
 const Player = (props) => {
   const {playerSelection, compSelection, cheating} = props.state;
@@ -19,7 +19,7 @@ const Player = (props) => {
 
   useEffect(() => {
     if (playerSelection) {
-      const compSelection = 'Moai';
+      const compSelection = chooseRobotItem(playerSelection, cheating);
       setState(prevState => ({ ...prevState, compSelection }));
     }
   }, [playerSelection, cheating, setState]);
