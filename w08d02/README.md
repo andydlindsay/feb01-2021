@@ -127,15 +127,25 @@ const Custom = styled.h2`
 * Any component that needs access to the shared state can simply import the context and pass it to `useContext`
 
 ```js
-// create the context to be shared
-const MessageContext = React.createContext({ example: 'initial context' });
+// in a separate file, create the context to be shared
+const MessageContext = React.createContext();
+
+// in the parent component, wrap all children in the context provider
+return (
+  <div>
+    <MessageContext.Provider value={{ message: 'hello world' }}>
+      <ChildOne />
+      <ChildTwo />
+    </MessageContext.Provider>
+  </div>
+);
 
 // consume the context in another component through useContext
 import MessageContext from './MessageContext');
-const message = React.useContext(MessageContext);
+const context = React.useContext(MessageContext);
 
 // or with destructuring
-const { example } = React.useContext(MessageContext);
+const { message } = React.useContext(MessageContext);
 ```
 
 ### `useRef`
