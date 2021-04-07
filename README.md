@@ -17,3 +17,4 @@
 * [W08D02 - Real World React](/w08d02)
 * [W08D03 - End-to-End Testing with Cypress](/w08d03)
 * [W08D05 - Intro to Ruby](/w08d05)
+* [W10D03 - Intro to TypeScript](/w10d03)
