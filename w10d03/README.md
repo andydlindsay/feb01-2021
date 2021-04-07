@@ -6,9 +6,9 @@
 * [x] Primitive Types
 * [x] Arrays
 * [x] Objects
-* [ ] Functions and Methods
-* [ ] Duck Typing
-* [ ] Generics
+* [x] Functions and Methods
+* [x] Duck Typing
+* [x] Generics
 
 ### What is it??
 * a superset of JavaScript
